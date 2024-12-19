@@ -10,7 +10,16 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = null;
+teachers [0] = "Nathan";
+teachers [1] = "Ed";
+teachers [2] = "Fabio";
+teachers [3] = "Phil";
+teachers [4] = "Carlo";
+teachers [5] = "Lewis";
+teachers [6] = "Luca";
+const fourthTeacher = teachers [3];
+console.log(fourthTeacher);
+
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 teachers.splice(4, 1, "Patrick");
@@ -39,8 +48,12 @@ console.log(teachers);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+teachers.indexOf("Lewis");
+const lewisIndex = teachers.indexOf("Lewis");
+console.log(lewisIndex);
+
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+const isTeachersEmpty = !teachers.length;
+console.log(isTeachersEmpty);
